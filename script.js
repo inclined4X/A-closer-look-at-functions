@@ -5,7 +5,7 @@ const bookings = [];
 const createBooking = function (
   flightNum,
   numPassengers = 1,
-  price = 199 * 1.2
+  price = 199 * numPassengers
 ) {
   // ES5
   //   numPassengers = numPassengers || 1;
@@ -21,3 +21,5 @@ const createBooking = function (
 
 createBooking('LH123');
 createBooking('LH123', 2, 800);
+createBooking('LH123', 2);
+createBooking('LH123', 5);
