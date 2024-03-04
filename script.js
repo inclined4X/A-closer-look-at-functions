@@ -51,3 +51,14 @@ const checkIn = function (flightNum, passenger) {
 checkIn(flight, jonas);
 console.log(flight);
 console.log(jonas);
+
+// Is the same as doing
+const flightNum = flight;
+const passenger = jonas;
+
+// Preparing for real life situations
+const newPassport = function (person) {
+  person.passport = Math.trunc(Math.random() * 10000000000);
+};
+
+newPassport(jonas);
