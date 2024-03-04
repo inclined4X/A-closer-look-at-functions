@@ -34,7 +34,7 @@ createBooking('LH123', undefined, 1000);
 const flight = 'LH234';
 const jonas = {
   name: 'Jonas Schmedtmann',
-  password: 24739479284,
+  passport: 24739479284,
 };
 
 const checkIn = function (flightNum, passenger) {
@@ -62,3 +62,4 @@ const newPassport = function (person) {
 };
 
 newPassport(jonas);
+checkIn(flight, jonas);
