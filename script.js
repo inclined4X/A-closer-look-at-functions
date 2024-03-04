@@ -28,7 +28,7 @@ createBooking('LH123', 5);
 
 // We cant do this
 createBooking('LH123', undefined, 1000);
-*/
+
 
 // HOW PASSING ARHUMENTS WORKS VALUE VS REFERENCE
 const flight = 'LH234';
@@ -63,3 +63,9 @@ const newPassport = function (person) {
 
 newPassport(jonas);
 checkIn(flight, jonas);
+*/
+
+// HIGHER ORDER FUNCTIONS
+const oneWord = function (str) {
+  return str.replace(/ /g, '').toLowerCase();
+};
