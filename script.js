@@ -48,13 +48,13 @@ const checkIn = function (flightNum, passenger) {
   }
 };
 
-checkIn(flight, jonas);
-console.log(flight);
-console.log(jonas);
+// checkIn(flight, jonas);
+// console.log(flight);
+// console.log(jonas);
 
 // Is the same as doing
-const flightNum = flight;
-const passenger = jonas;
+// const flightNum = flight;
+// const passenger = jonas;
 
 // Preparing for real life situations
 const newPassport = function (person) {
