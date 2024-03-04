@@ -72,10 +72,15 @@ const oneWord = function (str) {
 
 const upperFirstWord = function (str) {
   const [first, ...others] = str.split(' ');
-  return [first.toUpperCasee(), ...others].join(' ');
+  return [first.toUpperCase(), ...others].join(' ');
 };
 
 // Higher - order function
-const transformer = function (str, fn) {};
+const transformer = function (str, fn) {
+  console.log(`Original string: ${str}`);
+  console.log(`transformed string: ${fn(str)}`);
+
+  console.log(`Transformed by: ${fn.name}`);
+};
 
 transformer('JavaScript is the best!', upperFirstWord);
