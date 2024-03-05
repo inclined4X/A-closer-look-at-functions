@@ -185,6 +185,18 @@ const bookLH = book.bind(Lufthansa);
 const bookLX = book.bind(swiss);
 bookEW(23, 'Steven Williams ');
 
+// Partial application
 const bookEW23 = book.bind(eurowings, 23);
 bookEW23('Jonas Schmedtmann');
 bookEW23('Martha Cooper');
+
+// with event listeners
+Lufthansa.planes = 300;
+Lufthansa.buyPlane = function () {
+  console.log(this);
+  this.planes++;
+  console.log(this.planes);
+};
+
+// Lufthansa.buyPlane();
+document.querySelector('.buy').addEventListener('click', Lufthansa.buyPlane);
