@@ -119,3 +119,6 @@ const greetArr = greetingArr => {
 const greeterHeyArr = greetArr('Hey');
 greeterHeyArr('Jonas');
 greeterHeyArr('Jezemiah');
+
+const greetArr2 = greeting => name => console.log(`${greeting} ${name}`);
+greetArr2('Hi')('Jezemiah');
