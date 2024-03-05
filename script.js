@@ -176,3 +176,11 @@ console.log(swiss);
 
 // using call
 book.call(swiss, ...flightData);
+
+//BIND
+// book.call(eurowings, 23, 'Sarah Williams');
+
+const bookEW = book.bind(eurowings);
+const bookLH = book.bind(Lufthansa);
+const bookLX = book.bind(swiss);
+bookEW(23, 'Steven Williams ');
