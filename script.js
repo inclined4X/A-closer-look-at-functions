@@ -109,3 +109,13 @@ greeterHey('Jonas');
 greeterHey('Jezemiah');
 
 greet('Hello')('Jonas');
+
+const greetArr = greetingArr => {
+  const nameFunction = nameArr => {
+    console.log(`${greetingArr} ${nameArr}`);
+  };
+  return nameFunction;
+};
+const greeterHeyArr = greetArr('Hey');
+greeterHeyArr('Jonas');
+greeterHeyArr('Jezemiah');
