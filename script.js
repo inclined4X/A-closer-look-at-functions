@@ -63,7 +63,7 @@ const newPassport = function (person) {
 
 newPassport(jonas);
 checkIn(flight, jonas);
-*/
+
 
 // HIGHER ORDER FUNCTIONS
 const oneWord = function (str) {
@@ -95,3 +95,13 @@ const high5 = function () {
 document.body.addEventListener('click', high5);
 
 ['Jonas', 'Martha', 'Adam'].forEach(high5);
+*/
+
+// FUNCTIONS RETURNING FUNCTIONS
+const great = function (greeting) {
+  return function (name) {
+    console.log(`${greeting} ${name}`);
+  };
+};
+
+const greeterHey = greet('Hey');
