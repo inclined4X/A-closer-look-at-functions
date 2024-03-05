@@ -142,9 +142,29 @@ Lufthansa.book(635, 'Jezemiah');
 console.log(Lufthansa);
 
 const eurowings = {
-  name: 'Eurowings',
+  airline: 'Eurowings',
   iataCode: 'EW',
-  booking: [],
+  bookings: [],
 };
 
 const book = Lufthansa.book;
+
+// Does not work
+// book(23, 'Sarah Williams');
+
+book.call(eurowings, 23, 'Sarah Williams');
+console.log(eurowings);
+
+book.call(Lufthansa, 239, 'Marry Cooper');
+
+console.log(Lufthansa);
+
+// Call Method
+const swiss = {
+  airline: 'Swiss Air lines',
+  iataCode: 'LX',
+  bookings: [],
+};
+
+book.call(swiss, 583, 'Mary Cooper');
+console.log(swiss);
