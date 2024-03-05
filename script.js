@@ -95,7 +95,7 @@ const high5 = function () {
 document.body.addEventListener('click', high5);
 
 ['Jonas', 'Martha', 'Adam'].forEach(high5);
-*/
+
 
 // FUNCTIONS RETURNING FUNCTIONS
 const greet = function (greeting) {
@@ -122,3 +122,16 @@ greeterHeyArr('Jezemiah');
 
 const greetArr2 = greeting => name => console.log(`${greeting} ${name}`);
 greetArr2('Hi')('Jezemiah');
+*/
+
+// THE CALL AND APPLY METHODS
+const Lufthansa = {
+  airline: 'Lufthansa',
+  iataCode: 'LH',
+  booking: [],
+  book(flightNum, name) {
+    console.log(
+      `${name} booked a seat on ${this.airline} flight ${this.iataCode}${flightNum}`
+    );
+  },
+};
