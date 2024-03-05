@@ -72,6 +72,7 @@ const oneWord = function (str) {
 
 const upperFirstWord = function (str) {
   const [first, ...others] = str.split(' ');
+  console.log(first, others);
   return [first.toUpperCase(), ...others].join(' ');
 };
 
@@ -85,3 +86,9 @@ const transformer = function (str, fn) {
 
 transformer('JavaScript is the best!', upperFirstWord);
 transformer('JavaScript is the best!', oneWord);
+
+const high5 = function () {
+  console.log('👌');
+};
+
+document.body.addEventListener('click', high5);
