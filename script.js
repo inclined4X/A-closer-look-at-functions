@@ -199,4 +199,6 @@ Lufthansa.buyPlane = function () {
 };
 
 // Lufthansa.buyPlane();
-document.querySelector('.buy').addEventListener('click', Lufthansa.buyPlane);
+document
+  .querySelector('.buy')
+  .addEventListener('click', Lufthansa.buyPlane.bind(Lufthansa));
